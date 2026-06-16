@@ -1,7 +1,7 @@
 /* on adding of o: give border : 
     border: 1px solid rgb(217 199 126); */
 
-    /* on adding x:
+/* on adding x:
         border: 1px solid rgb(48, 196, 190); */
 
 * {
@@ -11,7 +11,7 @@
 
 body {
     background-color: black;
-    color:white;
+    color: white;
 
 
 }
@@ -44,7 +44,7 @@ div.box {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    cursor : pointer;
+    cursor: pointer;
 
 
 
@@ -62,13 +62,21 @@ p.circle {
 
 }
 
+article {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 section {
     /* background-color: blue; */
     width: fit-content;
-    height: auto;
+    height: 614.2px;
     padding: 40px;
     margin: 0 auto;
-    margin-top: calc(100vh - 74vh);
+    /* margin-top: calc(100vh - 74vh); */
     box-sizing: border-box;
     background-color: rgb(25 42 51);
     border-radius: 77px;
@@ -82,7 +90,7 @@ span.cross1 {
     background-color: rgb(48, 196, 190);
     display: block;
     transform: rotate(318deg);
-        box-shadow: 0px 1px 20px 7px rgb(50 112 109);
+    box-shadow: 0px 1px 20px 7px rgb(50 112 109);
 }
 
 span.cross2 {
@@ -94,13 +102,30 @@ span.cross2 {
     border-radius: 24px;
     background-color: rgb(48, 196, 190);
     transform: rotate(45deg) translate(-14px, -13px);
-        box-shadow: 0px 1px 20px 7px rgb(50 112 109);
+    box-shadow: 0px 1px 20px 7px rgb(50 112 109);
 
 }
 
-.hide1, .hide2 , .hide3 , .hide4, .hide5, .hide6, .hide7, .hide8 ,.hide9{
+.hide1,
+.hide2,
+.hide3,
+.hide4,
+.hide5,
+.hide6,
+.hide7,
+.hide8,
+.hide9 {
     display: none;
 }
-.chide1, .chide2 , .chide3 , .chide4, .chide5, .chide6, .chide7, .chide8 ,.chide9{
+
+.chide1,
+.chide2,
+.chide3,
+.chide4,
+.chide5,
+.chide6,
+.chide7,
+.chide8,
+.chide9 {
     display: none;
 }
