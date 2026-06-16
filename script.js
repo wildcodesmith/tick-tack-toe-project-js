@@ -194,7 +194,7 @@ let k = (e) => {
         turn_section.style.display = "none";
         report_card.classList.remove("hide");
         report_card_circle.style.display = "none";
-      }, 700);
+      },300);
 
       return;
     }
@@ -213,7 +213,7 @@ let k = (e) => {
       report_card_won_text.style.color = "rgb(51 97 117)";
       report_card_cross.style.display = "none";
       report_card_circle.style.display = "none";
-       }, 700);
+       },300);
     }
 
     console.log(moves_a);
@@ -350,7 +350,7 @@ let k = (e) => {
       report_card.classList.remove("hide");
       report_card_cross.style.display = "none";
       report_card_won_text.style.color = " rgb(255, 204, 0)";
-           }, 700);
+           },300);
     }
 
     //match draw
@@ -366,7 +366,7 @@ let k = (e) => {
       report_card_won_text.style.color = "rgb(51 97 117)";
       report_card_cross.style.display = "none";
       report_card_circle.style.display = "none";
-           }, 700);
+           },300);
     }
 
     console.log(moves_b);
