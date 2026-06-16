@@ -60,7 +60,7 @@ div.box {
 
 p.circle {
     border: 17px rgb(255, 204, 0) solid;
-    box-shadow: 0px 0px 20px 2px rgb(217 199 126);
+    box-shadow: 0px 0px 20px 0px rgb(217 199 126);
     border-radius: 50%;
     width: 36px;
     height: 36px;
@@ -98,7 +98,7 @@ span.cross1 {
     background-color: rgb(48, 196, 190);
     display: block;
     transform: rotate(318deg);
-    box-shadow: 0px 1px 20px 7px rgb(50 112 109);
+    box-shadow: 0px 1px 20px 3px rgb(50 112 109);
 }
 
 span.cross2 {
@@ -110,7 +110,7 @@ span.cross2 {
     border-radius: 24px;
     background-color: rgb(48, 196, 190);
     transform: rotate(45deg) translate(-14px, -13px);
-    box-shadow: 0px 1px 20px 7px rgb(50 112 109);
+    box-shadow: 0px 1px 20px 0px rgb(50 112 109);
 
 }
 
@@ -243,13 +243,28 @@ section.turn {
     gap:30px;
 
 }
+@keyframes color-change {
+    0% {
+        color: rgb(48, 196, 190);
+    }
 
+    50% {
+        color: rgb(236, 210, 108);
+    }
+
+    100% {
+        color: rgb(48, 196, 190);
+    }
+}
 .report-card-won-text{
-      color: rgb(48, 196, 190);
+      /* color: rgb(48, 196, 190); */
     font-size: 2.6rem;
-    text-shadow: 0px 1px 20px rgb(149 194 192);
+    text-shadow: 0px 1px 20px rgb(0, 0, 0);
     font-family: var(--font-family-game);
     font-size: 7.6rem;
+
+    animation: color-change 1s linear infinite;
+
 
 }
 button{
@@ -257,4 +272,7 @@ button{
     border-radius: 15px;
     border: 2px outset rgb(84 84 84);
         -webkit-tap-highlight-color: transparent;
+}
+.report-card-cross{
+        animation: color-change 1s linear infinite;
 }
