@@ -5,6 +5,9 @@ let moves_b = [];
 let box_filled = 0;
 let wrapper = document.querySelector(".wrapper");
 let h = document.querySelector("h1")
+let top_cross = document.querySelector(".top-cross");
+ let top_circle = document.querySelector(".top-circle");
+ let turn_h4 = document.querySelector(".top-turn-h4");
  
 
 let wh1 = [[0,0],[0,1],[0,2]];
@@ -35,7 +38,13 @@ let k = (e)=>{
                  document.getElementById("1").removeEventListener('click' ,k);
                 document.getElementById("1").style.border = "1px solid rgb(48, 196, 190)";
                 
-                document.querySelector(".hide1").classList.remove("hide1")
+                document.querySelector(".hide1").classList.remove("hide1");
+                top_cross.classList.add("hide");
+                top_circle.classList.remove("hide");
+
+                turn_h4.classList.remove("cross-turn");
+                turn_h4.classList.add("circle-turn");
+
                     box_filled++;
 
 
@@ -45,6 +54,10 @@ let k = (e)=>{
                 document.getElementById("2").style.border = "1px solid rgb(48, 196, 190)";
 
                 document.querySelector(".hide2").classList.remove("hide2")
+                top_cross.classList.add("hide");
+                top_circle.classList.remove("hide");
+                turn_h4.classList.remove("cross-turn");
+                turn_h4.classList.add("circle-turn");
                 box_filled++;
 
             }else if(e.target.id == 3){
@@ -53,6 +66,10 @@ let k = (e)=>{
                 document.getElementById("3").style.border = "1px solid rgb(48, 196, 190)";
 
                 document.querySelector(".hide3").classList.remove("hide3")
+                top_cross.classList.add("hide");
+                top_circle.classList.remove("hide");
+                turn_h4.classList.remove("cross-turn");
+                turn_h4.classList.add("circle-turn");
                 box_filled++;
 
             }else if(e.target.id == 4){
@@ -61,14 +78,24 @@ let k = (e)=>{
                 document.getElementById("4").style.border = "1px solid rgb(48, 196, 190)";
 
                 document.querySelector(".hide4").classList.remove("hide4")
+                top_cross.classList.add("hide");
+                top_circle.classList.remove("hide");
+                turn_h4.classList.remove("cross-turn");
+                turn_h4.classList.add("circle-turn");
                 box_filled++;
 
             }else if(e.target.id == 5){
                 moves_a.push([1,1]);
+                turn_h4.classList.remove("cross-turn");
+                turn_h4.classList.add("circle-turn");
                 document.getElementById("5").removeEventListener('click' ,k);
                 document.getElementById("5").style.border = "1px solid rgb(48, 196, 190)";
 
                 document.querySelector(".hide5").classList.remove("hide5")
+                top_cross.classList.add("hide");
+                top_circle.classList.remove("hide");
+                turn_h4.classList.remove("cross-turn");
+                turn_h4.classList.add("circle-turn");
                 box_filled++;
 
             }else if(e.target.id == 6){
@@ -77,6 +104,10 @@ let k = (e)=>{
                 document.getElementById("6").style.border = "1px solid rgb(48, 196, 190)";
 
                 document.querySelector(".hide6").classList.remove("hide6")
+                top_cross.classList.add("hide");
+                top_circle.classList.remove("hide");
+                turn_h4.classList.remove("cross-turn");
+                turn_h4.classList.add("circle-turn");
                 box_filled++;
 
             }else if(e.target.id == 7){
@@ -85,6 +116,10 @@ let k = (e)=>{
                 document.getElementById("7").style.border = "1px solid rgb(48, 196, 190)";
 
                 document.querySelector(".hide7").classList.remove("hide7")
+                top_cross.classList.add("hide");
+                top_circle.classList.remove("hide");
+                turn_h4.classList.remove("cross-turn");
+                turn_h4.classList.add("circle-turn");
                 box_filled++;
 
             }else if(e.target.id == 8){
@@ -93,6 +128,10 @@ let k = (e)=>{
                 document.getElementById("8").style.border = "1px solid rgb(48, 196, 190)";
 
                 document.querySelector(".hide8").classList.remove("hide8")
+                top_cross.classList.add("hide");
+                top_circle.classList.remove("hide");
+                turn_h4.classList.remove("cross-turn");
+                turn_h4.classList.add("circle-turn");
                 box_filled++;
 
             }else if(e.target.id == 9){
@@ -101,6 +140,10 @@ let k = (e)=>{
                 document.getElementById("9").style.border = "1px solid rgb(48, 196, 190)";
 
                 document.querySelector(".hide9").classList.remove("hide9")
+                top_cross.classList.add("hide");
+                top_circle.classList.remove("hide");
+                turn_h4.classList.remove("cross-turn");
+                turn_h4.classList.add("circle-turn");
                  
                 
                 box_filled++;
@@ -139,8 +182,13 @@ let k = (e)=>{
                 moves_b.push([0,0]);
                 document.getElementById("1").removeEventListener('click' ,k);
                 document.getElementById("1").style.border = "1px solid rgb(217 199 126)";
+                
 
                 document.querySelector(".chide1").classList.remove("chide1")
+                top_cross.classList.remove("hide");
+                top_circle.classList.add("hide");
+                turn_h4.classList.add("cross-turn");
+                turn_h4.classList.remove("circle-turn");
 
                 box_filled++;
             }else if(e.target.id == 2){
@@ -149,6 +197,10 @@ let k = (e)=>{
                 document.getElementById("2").style.border = "1px solid rgb(217 199 126)";
 
                 document.querySelector(".chide2").classList.remove("chide2")
+                 top_cross.classList.remove("hide");
+                top_circle.classList.add("hide");
+                turn_h4.classList.add("cross-turn");
+                turn_h4.classList.remove("circle-turn");
 
                 box_filled++;
 
@@ -158,6 +210,10 @@ let k = (e)=>{
                 document.getElementById("3").style.border = "1px solid rgb(217 199 126)";
 
                 document.querySelector(".chide3").classList.remove("chide3")
+                 top_cross.classList.remove("hide");
+                top_circle.classList.add("hide");
+                turn_h4.classList.add("cross-turn");
+                turn_h4.classList.remove("circle-turn");
 
                 box_filled++;
 
@@ -167,6 +223,10 @@ let k = (e)=>{
                 document.getElementById("4").style.border = "1px solid rgb(217 199 126)";
 
                 document.querySelector(".chide4").classList.remove("chide4")
+                 top_cross.classList.remove("hide");
+                top_circle.classList.add("hide");
+                turn_h4.classList.add("cross-turn");
+                turn_h4.classList.remove("circle-turn");
 
                 box_filled++;
 
@@ -176,6 +236,10 @@ let k = (e)=>{
                 document.getElementById("5").style.border = "1px solid rgb(217 199 126)";
 
                 document.querySelector(".chide5").classList.remove("chide5")
+                 top_cross.classList.remove("hide");
+                top_circle.classList.add("hide");
+                turn_h4.classList.add("cross-turn");
+                turn_h4.classList.remove("circle-turn");
 
                 box_filled++;
 
@@ -185,6 +249,10 @@ let k = (e)=>{
                 document.getElementById("6").style.border = "1px solid rgb(217 199 126)";
 
                 document.querySelector(".chide6").classList.remove("chide6")
+                 top_cross.classList.remove("hide");
+                top_circle.classList.add("hide");
+                turn_h4.classList.add("cross-turn");
+                turn_h4.classList.remove("circle-turn");
 
                 box_filled++;
 
@@ -194,6 +262,10 @@ let k = (e)=>{
                 document.getElementById("7").style.border = "1px solid rgb(217 199 126)";
 
                 document.querySelector(".chide7").classList.remove("chide7")
+                 top_cross.classList.remove("hide");
+                top_circle.classList.add("hide");
+                turn_h4.classList.add("cross-turn");
+                turn_h4.classList.remove("circle-turn");
 
                 box_filled++;
 
@@ -203,6 +275,10 @@ let k = (e)=>{
                 document.getElementById("8").style.border = "1px solid rgb(48, 196, 190)";
 
                 document.querySelector(".chide8").classList.remove("chide8")
+                 top_cross.classList.remove("hide");
+                top_circle.classList.add("hide");
+                turn_h4.classList.add("cross-turn");
+                turn_h4.classList.remove("circle-turn");
 
                 box_filled++;
 
@@ -212,6 +288,10 @@ let k = (e)=>{
                 document.getElementById("9").style.border = "1px solid rgb(217 199 126)";
 
                 document.querySelector(".chide9").classList.remove("chide9")
+                 top_cross.classList.remove("hide");
+                top_circle.classList.add("hide");
+                turn_h4.classList.add("cross-turn");
+                turn_h4.classList.remove("circle-turn");
 
                 box_filled++;
                 
