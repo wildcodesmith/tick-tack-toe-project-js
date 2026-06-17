@@ -230,19 +230,21 @@ section.turn {
 
 }
 
-.report-card section.one{
-    display:flex;
-    gap:30px;
+.report-card section.one {
+    display: flex;
+    gap: 30px;
     justify-content: center;
     align-items: center;
 }
-.report-card section.two{
-    display:flex;
-        justify-content: center;
+
+.report-card section.two {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap:30px;
+    gap: 30px;
 
 }
+
 @keyframes color-change {
     0% {
         color: rgb(48, 196, 190);
@@ -256,8 +258,9 @@ section.turn {
         color: rgb(48, 196, 190);
     }
 }
-.report-card-won-text{
-      /* color: rgb(48, 196, 190); */
+
+.report-card-won-text {
+    /* color: rgb(48, 196, 190); */
     font-size: 2.6rem;
     text-shadow: 0px 1px 20px rgb(0, 0, 0);
     font-family: var(--font-family-game);
@@ -267,12 +270,98 @@ section.turn {
 
 
 }
-button{
+.report-card-match-draw-text{
+    font-size :  7rem;
+}
+
+button {
     background-color: transparent;
     border-radius: 15px;
     border: 2px outset rgb(84 84 84);
-        -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
 }
-.report-card-cross{
-        animation: color-change 1s linear infinite;
+
+.report-card-cross {
+    animation: color-change 1s linear infinite;
+}
+
+@media screen and (max-width : 600px) {
+    section.cardbox-container{
+        padding: 33px 24px;
+    }
+    .report-card-match-draw-text{
+            font-size: 6rem;
+    }
+
+    div.wrapper {
+        gap: 30px;
+    }
+
+    div.wrapper div.box {
+        width: 80px;
+        height: 80px;
+        border-radius: 22px;
+    }
+
+    div.box .cross .cross1 {
+        width: 62px;
+        height: 12px;
+    }
+
+    div.box .cross .cross2 {
+        width: 62px;
+        height: 12px;
+        transform: rotate(45deg) translate(-8px, -9px);
+    }
+
+    div.box .circle {
+
+        border: 10px rgb(255, 204, 0) solid;
+    }
+
+    section.top section.logo span.cross2,
+    section.top section.turn span.cross2 {
+        transform: rotate(45deg) translate(-4px, -5px);
+    }
+
+    section.top section.logo span.cross1,
+    section.top section.logo span.cross2,
+    section.top section.turn span.cross1,
+    section.top section.turn span.cross2 {
+        width: 40px;
+        height: 7px;
+
+
+    }
+    section.top section.logo p.circle, section.top section.turn p.circle{
+        width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+        border: 6px rgb(255, 204, 0) solid;
+    }
+    section.turn {
+        flex-direction: column;
+            gap: 13px;
+        margin:0px;
+    }
+    .material-symbols-outlined {
+            font-size: 3rem;
+    }
+    .report-card section.two {
+        flex-direction: column;
+    }
+    
+
+}
+
+@media screen  and (max-width : 344px){
+    section.cardbox-container{
+        padding: 56px 11px;
+    }
+        div.wrapper{
+                    gap: 15px;
+        }
+        .report-card-match-draw-text{
+            font-size:4.6rem
+        }
 }

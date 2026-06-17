@@ -212,6 +212,7 @@ let k = (e) => {
 
       report_card_won_text.style.textShadow = "0px 7px 0px black";
     //   report_card_won_text.style.color = "rgb(51 97 117)";
+    report_card_won_text.classList.add("report-card-match-draw-text");
       report_card_won_text.style.animation = " color-change 1s linear infinite";
 
       report_card_cross.style.display = "none";
@@ -365,9 +366,11 @@ let k = (e) => {
       turn_section.style.display = "none";
       report_card.classList.remove("hide");
       report_card_won_text.innerHTML = "Match draw";
-      report_card_won_text.style.fontSize = "2rem";
+
       report_card_won_text.style.animation = " color-change 1s linear infinite";
     //   report_card_won_text.style.color = "rgb(51 97 117)";
+    report_card_won_text.classList.add("report-card-match-draw-text");
+
       report_card_cross.style.display = "none";
       report_card_circle.style.display = "none";
            },300);
